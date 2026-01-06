@@ -16,11 +16,11 @@ export default function ProgramsPage() {
     <>
       {/* Page Header */}
       <section className="relative w-full px-20 py-12 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="font-montserrat font-medium text-gray-900 text-4xl tracking-tight leading-tight mb-4">
+        <div className="max-w-7xl mx-auto flex flex-col items-center">
+          <h1 className="font-montserrat font-medium text-gray-900 text-5xl tracking-normal leading-normal text-center">
             Programs & Events
           </h1>
-          <p className="font-montserrat font-normal text-gray-500 text-lg max-w-2xl">
+          <p className="max-w-2xl font-montserrat font-normal text-gray-500 text-base text-center tracking-normal leading-relaxed mt-4">
             Discover initiatives you can join, apply to, or engage with as part
             of the broader ecosystem.
           </p>
@@ -64,13 +64,11 @@ export default function ProgramsPage() {
       </section>
 
       {/* Event Gallery Section */}
-      <section className="relative w-full px-20 py-8 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="font-montserrat font-medium text-gray-900 text-2xl tracking-normal leading-normal mb-6">
-            Event Gallery
-          </h2>
-          <EventGallerySection />
-        </div>
+      <section className="relative w-full py-8 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
+        <h2 className="font-montserrat font-medium text-gray-900 text-2xl tracking-normal leading-normal mb-6 px-20 max-w-7xl mx-auto">
+          Event Gallery
+        </h2>
+        <EventGallerySection />
       </section>
 
       {/* Past Events Section */}

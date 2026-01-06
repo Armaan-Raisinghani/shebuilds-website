@@ -28,6 +28,38 @@ const pastEvents = [
     description:
       "The Future of AI Summit focuses on the latest advancements in artificial intelligence and machine learning. This event will feature keynote speakers from leading tech companies, panel discussions on ethical AI practices, and hands-on sessions where participants can learn about cutting-edge tools and technologies. It's a perfect opportunity for professionals to gain insights and foster collaborations in the AI landscape.",
   },
+  {
+    title: "Women in Deep Tech Conference",
+    date: "October 5-6, 2024",
+    images: [
+      "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-3.png",
+      "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8.png",
+      "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-4.png",
+    ],
+    description:
+      "The Women in Deep Tech Conference celebrated the achievements of women leaders in emerging technologies. The event featured inspiring keynotes, panel discussions on breaking barriers in tech, and networking sessions that connected aspiring professionals with industry mentors.",
+  },
+  {
+    title: "AI Ethics Symposium",
+    date: "September 20, 2024",
+    images: [
+      "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-1.png",
+      "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-2.png",
+    ],
+    description:
+      "The AI Ethics Symposium brought together researchers, policymakers, and practitioners to discuss the ethical implications of artificial intelligence. Topics included bias in AI systems, privacy concerns, and the importance of responsible AI development.",
+  },
+  {
+    title: "Startup Showcase 2024",
+    date: "August 15, 2024",
+    images: [
+      "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-4.png",
+      "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-3.png",
+      "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8.png",
+    ],
+    description:
+      "Startup Showcase 2024 provided a platform for early-stage companies to present their innovations to investors and industry leaders. The event featured pitch competitions, mentorship sessions, and funding opportunities for promising startups.",
+  },
 ];
 
 // Image Gallery component for each event
@@ -43,7 +75,7 @@ function EventImageGallery({ images, title }: { images: string[]; title: string 
   };
 
   return (
-    <div className="relative w-full md:w-[500px] flex-shrink-0">
+    <div className="relative w-full md:w-125 shrink-0">
       {/* Main Image */}
       <div className="relative h-72 rounded-lg overflow-hidden bg-gray-100">
         <Image
@@ -107,9 +139,14 @@ function EventImageGallery({ images, title }: { images: string[]; title: string 
 }
 
 export function PastEventsSection() {
+  const [showAll, setShowAll] = useState(false);
+  
+  const displayedEvents = showAll ? pastEvents : pastEvents.slice(0, 2);
+  const hasMore = pastEvents.length > 2;
+
   return (
     <div className="flex flex-col w-full items-start gap-10">
-      {pastEvents.map((event, index) => (
+      {displayedEvents.map((event, index) => (
         <article
           key={index}
           className="flex flex-col md:flex-row items-start gap-8 w-full opacity-0 -translate-y-4 animate-fade-in"
@@ -137,12 +174,15 @@ export function PastEventsSection() {
         </article>
       ))}
 
-      <Button
-        variant="outline"
-        className="h-auto w-auto px-8 py-2 border-teal-700 text-teal-900 hover:bg-teal-700 hover:text-white transition-colors font-montserrat font-medium text-sm tracking-normal leading-relaxed self-center mt-4"
-      >
-        View more
-      </Button>
+      {hasMore && (
+        <Button
+          variant="outline"
+          onClick={() => setShowAll(!showAll)}
+          className="h-auto w-auto px-8 py-2 border-teal-700 text-teal-900 hover:bg-teal-700 hover:text-white transition-colors font-montserrat font-medium text-sm tracking-normal leading-relaxed self-center mt-4"
+        >
+          {showAll ? "Show Less" : "View More"}
+        </Button>
+      )}
     </div>
   );
 }

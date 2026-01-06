@@ -43,7 +43,7 @@ export function EventGallerySection() {
           {eventGalleryData.map((event) => (
             <article
               key={`first-${event.id}`}
-              className="relative h-64 flex-shrink-0 group cursor-pointer"
+              className="relative h-64 shrink-0 group cursor-pointer"
               style={{ width: event.width }}
             >
               <Image
@@ -70,7 +70,7 @@ export function EventGallerySection() {
           {eventGalleryData.map((event) => (
             <article
               key={`second-${event.id}`}
-              className="relative h-64 flex-shrink-0 group cursor-pointer"
+              className="relative h-64 shrink-0 group cursor-pointer"
               style={{ width: event.width }}
             >
               <Image

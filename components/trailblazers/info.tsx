@@ -83,7 +83,7 @@ export function WomenTrailblazerInfoSection({
                 key={category.id}
                 variant="outline"
                 onClick={() => handleCategoryClick(category.id)}
-                className={`flex flex-col w-full h-36 items-start justify-center gap-2 p-6 rounded-tl-3xl rounded-br-3xl transition-all ${
+                className={`flex flex-col w-full h-36 items-start justify-center gap-2 p-4 rounded-tl-3xl rounded-br-3xl transition-all overflow-hidden ${
                   isActive
                     ? "bg-teal-700 border-teal-700 hover:bg-teal-800"
                     : "bg-transparent border-teal-700 hover:bg-teal-700/10"
@@ -97,7 +97,7 @@ export function WomenTrailblazerInfoSection({
                   The
                 </span>
                 <span
-                  className={`font-montserrat font-medium text-xl leading-tight ${
+                  className={`font-montserrat font-medium text-base leading-snug text-left whitespace-normal break-words w-full ${
                     isActive ? "text-white" : "text-gray-900"
                   }`}
                 >
