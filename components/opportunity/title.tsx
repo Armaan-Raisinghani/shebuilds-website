@@ -3,14 +3,9 @@
 import { SearchIcon } from "lucide-react";
 import { Input } from "@/ui/input";
 import { ToggleGroup, ToggleGroupItem } from "@/ui/toggle-group";
+import filtersJson from "@/public/data/opportunityFilters.json";
 
-const filterOptions = [
-  { value: "all", label: "All" },
-  { value: "high-school", label: "High School" },
-  { value: "university", label: "University" },
-  { value: "entrepreneurs", label: "Entrepreneurs" },
-  { value: "professionals", label: "Professionals" },
-];
+const filterOptions = filtersJson.filterOptions;
 
 interface GrantsAndFellowshipsTitleSectionProps {
   searchQuery: string;

@@ -1,0 +1,94 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "SheLeads Tech",
+      "date": "29 / 12 / 25",
+      "category": "Hackathon",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8.png",
+      "applyLink": "https://example.com/apply/sheleads",
+      "learnMoreLink": "https://example.com/events/sheleads",
+      "description": "SheLeads Tech is a hackathon focused on empowering women in technology. Participants will collaborate to develop innovative solutions, network with industry leaders, and showcase their skills."
+    },
+    {
+      "id": 2,
+      "title": "SheInnovates",
+      "date": "20 / 01 / 26",
+      "category": "Hackathon",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-1.png",
+      "applyLink": "https://example.com/apply/sheinnovates",
+      "learnMoreLink": "https://example.com/events/sheinnovates",
+      "description": "SheInnovates is a dynamic hackathon that encourages women to leverage technology for social impact. Join us to create, connect, and contribute to a better future."
+    },
+    {
+      "id": 3,
+      "title": "AI Ideas Challenge",
+      "date": "15 / 02 / 26",
+      "category": "Ideathon",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-2.png",
+      "applyLink": "https://example.com/apply/ai-ideas",
+      "learnMoreLink": "https://example.com/events/ai-ideas",
+      "description": "AI Ideas Challenge brings together creative minds to brainstorm and pitch innovative AI solutions. Present your ideas to industry experts and win exciting prizes."
+    },
+    {
+      "id": 4,
+      "title": "Future Tech Talks",
+      "date": "10 / 03 / 26",
+      "category": "Speaker Event",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-3.png",
+      "applyLink": "https://example.com/apply/tech-talks",
+      "learnMoreLink": "https://example.com/events/tech-talks",
+      "description": "Future Tech Talks features inspiring speakers from the tech industry sharing insights on emerging technologies, career growth, and the future of innovation."
+    },
+    {
+      "id": 5,
+      "title": "Innovation Sprint",
+      "date": "25 / 03 / 26",
+      "category": "Ideathon",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-4.png",
+      "applyLink": "https://example.com/apply/innovation-sprint",
+      "learnMoreLink": "https://example.com/events/innovation-sprint",
+      "description": "Innovation Sprint is an intensive ideation session where participants develop creative solutions to real-world challenges in just 48 hours."
+    },
+    {
+      "id": 6,
+      "title": "Women in AI Summit",
+      "date": "05 / 04 / 26",
+      "category": "Speaker Event",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8.png",
+      "applyLink": "https://example.com/apply/women-ai-summit",
+      "learnMoreLink": "https://example.com/events/women-ai-summit",
+      "description": "Women in AI Summit brings together leaders, researchers, and practitioners to discuss the impact of women in artificial intelligence and machine learning."
+    },
+    {
+      "id": 7,
+      "title": "Code for Change",
+      "date": "20 / 04 / 26",
+      "category": "Hackathon",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-1.png",
+      "applyLink": "https://example.com/apply/code-for-change",
+      "learnMoreLink": "https://example.com/events/code-for-change",
+      "description": "Code for Change is a 48-hour hackathon where developers create solutions addressing social challenges. Build impactful projects and win prizes."
+    },
+    {
+      "id": 8,
+      "title": "Deep Tech Dialogues",
+      "date": "05 / 05 / 26",
+      "category": "Speaker Event",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-2.png",
+      "applyLink": "https://example.com/apply/deep-tech",
+      "learnMoreLink": "https://example.com/events/deep-tech",
+      "description": "Deep Tech Dialogues brings together experts to discuss cutting-edge technologies like quantum computing, biotech, and advanced materials."
+    },
+    {
+      "id": 9,
+      "title": "Startup Pitch Day",
+      "date": "15 / 05 / 26",
+      "category": "Ideathon",
+      "image": "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-3.png",
+      "applyLink": "https://example.com/apply/pitch-day",
+      "learnMoreLink": "https://example.com/events/pitch-day",
+      "description": "Startup Pitch Day gives aspiring entrepreneurs the chance to present their ideas to investors and mentors. Get feedback and funding opportunities."
+    }
+  ]
+}

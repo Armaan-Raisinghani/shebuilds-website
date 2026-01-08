@@ -1,0 +1,28 @@
+{
+  "imageGallery": {
+    "topImages": [
+      {
+        "src": "https://c.animaapp.com/mjvqb3fs5p8iw8/img/rectangle-40-1.png",
+        "alt": "Event photo 1"
+      },
+      {
+        "src": "https://c.animaapp.com/mjvqb3fs5p8iw8/img/rectangle-39.png",
+        "alt": "Event photo 2"
+      }
+    ]
+  },
+  "programsAndEvents": {
+    "galleryImages": [
+      "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-135.png",
+      "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-137.png",
+      "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-136.png"
+    ]
+  },
+  "opportunityRepository": {
+    "galleryImages": [
+      "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-135.png",
+      "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-137.png",
+      "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-136.png"
+    ]
+  }
+}

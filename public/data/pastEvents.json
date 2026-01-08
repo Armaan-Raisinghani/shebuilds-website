@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "title": "InnovAI Tech Forum",
+      "date": "November 14-15, 2024",
+      "images": [
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-1.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-2.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-3.png"
+      ],
+      "description": "InnovAI Tech Forum is an exciting event that brings together thought leaders, innovators, and enthusiasts from various fields to explore the profound impact of algorithms on our daily lives and industries. Attendees will have the opportunity to engage in insightful discussions, attend workshops, and network with like-minded individuals who are passionate about the future shaped by technology and data-driven decision-making."
+    },
+    {
+      "title": "Future of AI Summit",
+      "date": "January 10-12, 2025",
+      "images": [
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-2.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-4.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-1.png"
+      ],
+      "description": "The Future of AI Summit focuses on the latest advancements in artificial intelligence and machine learning. This event will feature keynote speakers from leading tech companies, panel discussions on ethical AI practices, and hands-on sessions where participants can learn about cutting-edge tools and technologies. It's a perfect opportunity for professionals to gain insights and foster collaborations in the AI landscape."
+    },
+    {
+      "title": "Women in Deep Tech Conference",
+      "date": "October 5-6, 2024",
+      "images": [
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-3.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-4.png"
+      ],
+      "description": "The Women in Deep Tech Conference celebrated the achievements of women leaders in emerging technologies. The event featured inspiring keynotes, panel discussions on breaking barriers in tech, and networking sessions that connected aspiring professionals with industry mentors."
+    },
+    {
+      "title": "AI Ethics Symposium",
+      "date": "September 20, 2024",
+      "images": [
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-1.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-2.png"
+      ],
+      "description": "The AI Ethics Symposium brought together researchers, policymakers, and practitioners to discuss the ethical implications of artificial intelligence. Topics included bias in AI systems, privacy concerns, and the importance of responsible AI development."
+    },
+    {
+      "title": "Startup Showcase 2024",
+      "date": "August 15, 2024",
+      "images": [
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-4.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8-3.png",
+        "https://c.animaapp.com/mjvrhj0c9cynBP/img/rectangle-8.png"
+      ],
+      "description": "Startup Showcase 2024 provided a platform for early-stage companies to present their innovations to investors and industry leaders. The event featured pitch competitions, mentorship sessions, and funding opportunities for promising startups."
+    }
+  ]
+}

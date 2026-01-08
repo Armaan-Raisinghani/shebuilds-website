@@ -1,11 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/ui/button";
+import homeImagesData from "@/public/data/homeImages.json";
 
-const galleryImages = [
-  "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-135.png",
-  "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-137.png",
-  "https://c.animaapp.com/mjvqb3fs5p8iw8/img/frame-136.png",
-];
+const galleryImages = homeImagesData.programsAndEvents.galleryImages;
 
 export function ProgramAndEventsSection() {
   return (

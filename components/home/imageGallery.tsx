@@ -1,17 +1,9 @@
 import Image from "next/image";
 import { Button } from "@/ui/button";
+import homeImagesData from "@/public/data/homeImages.json";
 
 export function ImageGallerySection() {
-  const topImages = [
-    {
-      src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/rectangle-40-1.png",
-      alt: "Event photo 1",
-    },
-    {
-      src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/rectangle-39.png",
-      alt: "Event photo 2",
-    },
-  ];
+  const topImages = homeImagesData.imageGallery.topImages;
 
   return (
     <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">

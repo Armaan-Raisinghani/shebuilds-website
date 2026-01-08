@@ -1,34 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import footerData from "@/public/data/footer.json";
 
-const siteMapLinks = [
-  { label: "Home", href: "/" },
-  { label: "Program & Events", href: "/programs" },
-  { label: "Women Trailblazers", href: "/trailblazers" },
-  { label: "Learning Hub", href: "/learning" },
-  { label: "Opportunity Repository", href: "/opportunities" },
-];
-
-const contactInfo = [
-  { text: "+91 99999 99999" },
-  { text: "shebuildsai@email.com" },
-  { text: "Plaksha University, Sector 25, Mohali, Punjab 140301" },
-];
-
-const partnerLogos = [
-  {
-    src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/image-6.png",
-    alt: "Partner logo 1",
-    width: 214,
-    height: 64,
-  },
-  {
-    src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/image-8.png",
-    alt: "Partner logo 2",
-    width: 147,
-    height: 48,
-  },
-];
+const siteMapLinks = footerData.siteMapLinks;
+const contactInfo = footerData.contactInfo;
+const partnerLogos = footerData.partnerLogos;
 
 export function Footer() {
   return (

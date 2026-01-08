@@ -2,14 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import navigationData from "@/public/data/navigation.json";
 
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Programs & Events", href: "/programs" },
-  { label: "Women Trailblazers", href: "/trailblazers" },
-  { label: "Opportunity Repository", href: "/opportunity" },
-  { label: "Learning Hub", href: "/hub" },
-];
+const navItems = navigationData.navItems;
 
 export function Header() {
   const pathname = usePathname();

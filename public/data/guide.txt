@@ -1,0 +1,9 @@
+navigation.json - Navigation menu items
+footer.json - Footer links, contact info, and partner logos
+upcomingEvents.json - All upcoming event data (9 events)
+pastEvents.json - Past events with image galleries (5 events)
+eventGallery.json - Event gallery carousel data
+profiles.json - Trailblazer profile data (8 profiles)
+trailblazerCategories.json - Category filters for trailblazers
+opportunityFilters.json - Filter options for opportunities
+homeImages.json - Home page image gallery data

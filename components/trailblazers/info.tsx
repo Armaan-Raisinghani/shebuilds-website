@@ -1,33 +1,9 @@
 "use client";
 
 import { Button } from "@/ui/button";
+import categoriesJson from "@/public/data/trailblazerCategories.json";
 
-const categories = [
-  {
-    id: "scientist",
-    label: "Scientist and Researchers",
-    description:
-      "Founders, researchers, and innovators advancing the frontiers of AI through groundbreaking ideas and transformative technologies. They are shaping new possibilities and driving India's leadership in artificial intelligence.",
-  },
-  {
-    id: "changemakers",
-    label: "Changemakers",
-    description:
-      "Leaders and advocates driving social impact through technology, creating inclusive solutions that empower communities and bridge digital divides across India.",
-  },
-  {
-    id: "catalyst",
-    label: "Catalyst",
-    description:
-      "Investors, mentors, and ecosystem builders who fuel innovation by supporting startups, fostering collaborations, and creating opportunities for emerging talent.",
-  },
-  {
-    id: "architects",
-    label: "Architects",
-    description:
-      "Technical visionaries designing the infrastructure and systems that power AI applications, building scalable solutions for real-world challenges.",
-  },
-];
+const categories = categoriesJson.categories;
 
 interface WomenTrailblazerInfoSectionProps {
   activeCategory: string | null;
