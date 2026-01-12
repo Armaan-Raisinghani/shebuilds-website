@@ -6,9 +6,9 @@ export function LearningHubSection() {
   const image = "https://c.animaapp.com/mjvqb3fs5p8iw8/img/image-28.png";
 
   return (
-    <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
+    <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
       {/* Image Grid */}
-      <div className="w-full lg:max-w-md -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
+      <div className="w-full lg:w-xl -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
         <Image
           className="w-full h-auto aspect-video object-cover rounded-lg hover:scale-105 transition-transform"
           width={2000}

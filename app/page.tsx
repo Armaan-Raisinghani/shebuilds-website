@@ -38,7 +38,7 @@ export default function HomePage() {
     <div className="flex flex-col gap-16 py-8">
       {/* Hero Section */}
       <section className="relative w-full px-4 sm:px-8 lg:px-20 pt-8 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto flex justify-center">
           <HeroSection />
         </div>
       </section>
@@ -79,28 +79,28 @@ export default function HomePage() {
 
       {/* Programs and Events */}
       <section className="relative w-full px-4 sm:px-8 lg:px-20 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:600ms]">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto flex justify-center">
           <ImageGallerySection />
         </div>
       </section>
 
       {/* Women Trailblazers */}
       <section className="relative w-full px-4 sm:px-8 lg:px-20 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:800ms]">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto flex justify-center">
           <ProgramAndEventsSection />
         </div>
       </section>
 
       {/* Opportunity Repository */}
       <section className="relative w-full px-4 sm:px-8 lg:px-20 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:1000ms]">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto flex justify-center">
           <OpportunityRepositorySection />
         </div>
       </section>
 
       {/* Learning Hub */}
       <section className="relative w-full px-4 sm:px-8 lg:px-20 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:1200ms]">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto flex justify-center">
           <LearningHubSection />
         </div>
       </section>

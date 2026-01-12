@@ -4,7 +4,7 @@ import { Button } from "@/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col w-full max-w-3xl items-center gap-8 sm:gap-12 mx-auto px-4">
+    <section className="flex flex-col w-full max-w-3xl items-center gap-8 sm:gap-12 mx-auto">
       <div className="flex flex-col items-center gap-3 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
         <div className="flex flex-col items-center gap-4 sm:gap-5 w-full">
           <div className="flex flex-col items-center gap-3 sm:gap-4 w-full">

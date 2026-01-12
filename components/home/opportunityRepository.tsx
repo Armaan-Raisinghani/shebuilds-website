@@ -4,7 +4,7 @@ import { Button } from "@/ui/button";
 
 export function OpportunityRepositorySection() {
   return (
-    <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
+    <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
       <div className="flex flex-col w-full lg:w-96 items-start gap-6 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <div className="flex flex-col items-start gap-4 w-full">
           <h2 className="font-montserrat font-medium text-gray-900 text-2xl sm:text-3xl tracking-normal leading-normal">
@@ -27,7 +27,7 @@ export function OpportunityRepositorySection() {
       </div>
 
       <Image
-        className="w-full lg:max-w-xl h-auto rounded-lg object-cover -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]"
+        className="w-full lg:w-xl h-auto rounded-lg object-cover -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]"
         width={594}
         height={374}
         alt="Opportunity Repository Interface"

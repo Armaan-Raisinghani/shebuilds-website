@@ -7,7 +7,7 @@ export function ImageGallerySection() {
   const topImages = homeImagesData.imageGallery.topImages;
 
   return (
-    <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
+    <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
       {/* Text Content */}
       <div className="flex flex-col w-full lg:w-96 items-start gap-6">
         <div className="flex flex-col items-start gap-4 w-full -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
@@ -31,7 +31,7 @@ export function ImageGallerySection() {
       </div>
 
       {/* Image Grid */}
-      <div className="flex flex-col w-full lg:max-w-lg items-start gap-3 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:600ms]">
+      <div className="flex flex-col w-full lg:w-xl items-start gap-3 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:600ms]">
         <div className="flex h-44 items-center gap-3 w-full">
           {topImages.map((image, index) => (
             <div key={index} className="relative flex-1 h-full rounded-lg overflow-hidden">

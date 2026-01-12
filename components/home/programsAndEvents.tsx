@@ -7,9 +7,9 @@ const galleryImages = homeImagesData.programsAndEvents.galleryImages;
 
 export function ProgramAndEventsSection() {
   return (
-    <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 w-full">
+    <section className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
       {/* Image Grid */}
-      <div className="grid grid-cols-2 gap-3 w-full lg:w-auto max-w-lg -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="grid grid-cols-2 gap-3 w-full lg:w-xl -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         {/* Teal text card */}
         <div className="bg-teal-700 rounded-tl-[48px] rounded-br-[48px] p-6 flex flex-col justify-center min-h-36">
           <p className="font-montserrat text-white text-sm leading-relaxed">
