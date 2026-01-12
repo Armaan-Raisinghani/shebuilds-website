@@ -32,14 +32,14 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:inline-flex items-center gap-6 lg:gap-8">
+          <ul className="hidden lg:inline-flex items-center gap-6 xl:gap-8">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`font-montserrat font-medium text-base tracking-normal leading-normal transition-colors hover:text-teal-700 ${
+                    className={`font-montserrat font-medium text-sm xl:text-base tracking-normal leading-normal transition-colors hover:text-teal-700 ${
                       isActive ? "text-teal-700" : "text-gray-900"
                     }`}
                   >
@@ -53,7 +53,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 text-gray-900 hover:text-teal-700 transition-colors"
+            className="lg:hidden p-2 text-gray-900 hover:text-teal-700 transition-colors"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -62,7 +62,7 @@ export function Header() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute left-0 right-0 top-full bg-white shadow-lg border-t border-gray-100 animate-fade-in">
+          <div className="lg:hidden absolute left-0 right-0 top-full bg-white shadow-lg border-t border-gray-100 animate-fade-in">
             <ul className="flex flex-col py-4 px-4">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
