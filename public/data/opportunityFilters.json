@@ -1,9 +1,0 @@
-{
-  "filterOptions": [
-    { "value": "all", "label": "All" },
-    { "value": "high-school", "label": "High School" },
-    { "value": "university", "label": "University" },
-    { "value": "entrepreneurs", "label": "Entrepreneurs" },
-    { "value": "professionals", "label": "Professionals" }
-  ]
-}

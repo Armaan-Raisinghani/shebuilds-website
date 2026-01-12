@@ -1,20 +1,44 @@
 import Image from "next/image";
 import Link from "next/link";
-import footerData from "@/public/data/footer.json";
 
-const siteMapLinks = footerData.siteMapLinks;
-const contactInfo = footerData.contactInfo;
-const partnerLogos = footerData.partnerLogos;
+const siteMapLinks = [
+  { label: "Home", href: "/" },
+  { label: "Program & Events", href: "/programs" },
+  { label: "Women Trailblazers", href: "/trailblazers" },
+  { label: "Learning Hub", href: "/hub" },
+  { label: "Opportunity Repository", href: "/opportunity" },
+];
+
+const contactInfo = [
+  { text: "+91 99999 99999" },
+  { text: "shebuildsai@email.com" },
+  { text: "Plaksha University, Sector 25, Mohali, Punjab 140301" },
+];
+
+const partnerLogos = [
+  {
+    src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/image-6.png",
+    alt: "Plaksha University logo",
+    width: 214,
+    height: 64,
+  },
+  {
+    src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/image-8.png",
+    alt: "AI for India logo",
+    width: 147,
+    height: 48,
+  },
+];
 
 export function Footer() {
   return (
-    <footer className="w-full bg-teal-900 pt-16 pb-8">
-      <div className="w-full px-20">
-        <div className="max-w-7xl mx-auto flex flex-col gap-12 py-8">
-        <div className="flex flex-wrap items-start justify-between gap-12">
+    <footer className="w-full bg-teal-900 pt-12 sm:pt-16 pb-8">
+      <div className="w-full px-4 sm:px-8 lg:px-20">
+        <div className="max-w-7xl mx-auto flex flex-col gap-8 sm:gap-12 py-6 sm:py-8">
+        <div className="flex flex-col sm:flex-row flex-wrap items-start justify-between gap-8 sm:gap-12">
           <div className="flex flex-col max-w-xl gap-7">
             <div className="flex flex-col max-w-sm gap-4">
-              <h2 className="text-white font-montserrat font-medium text-3xl tracking-tight leading-8">
+              <h2 className="text-white font-montserrat font-medium text-2xl sm:text-3xl tracking-tight leading-8">
                 SheBuildsAI
               </h2>
 
@@ -26,7 +50,7 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 flex-wrap">
                 {partnerLogos.map((logo, index) => (
                   <Image
                     key={index}
@@ -54,8 +78,8 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex items-start gap-6">
-            <nav className="flex flex-col w-44 gap-4">
+          <div className="flex items-start gap-6 sm:gap-6 w-full sm:w-auto">
+            <nav className="flex flex-col w-36 sm:w-44 gap-4">
               <h3 className="font-montserrat font-medium text-white text-base tracking-normal leading-relaxed">
                 Site Map
               </h3>
@@ -65,7 +89,7 @@ export function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="font-montserrat font-normal text-white/75 text-xs tracking-normal leading-5 hover:text-white transition-colors"
+                      className="font-montserrat font-normal text-white/75 text-xs tracking-normal leading-5 hover:text-white transition-colors underline underline-offset-2"
                     >
                       {link.label}
                     </Link>
@@ -74,7 +98,7 @@ export function Footer() {
               </ul>
             </nav>
 
-            <address className="flex flex-col w-44 gap-4 not-italic">
+            <address className="flex flex-col w-36 sm:w-44 gap-4 not-italic">
               <h3 className="font-montserrat font-medium text-white text-base tracking-normal leading-relaxed">
                 Contact
               </h3>
@@ -93,22 +117,22 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between w-full">
-          <p className="font-montserrat font-normal text-white text-base tracking-normal leading-normal">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 w-full">
+          <p className="font-montserrat font-normal text-white text-sm sm:text-base tracking-normal leading-normal">
             © 2025 SheBuildsAI. All rights reserved
           </p>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 sm:gap-6">
             <Link
               href="/privacy"
-              className="font-montserrat font-normal text-white text-base tracking-normal leading-normal underline hover:text-white/75 transition-colors"
+              className="font-montserrat font-normal text-white text-sm sm:text-base tracking-normal leading-normal underline hover:text-white/75 transition-colors"
             >
               Privacy Policy
             </Link>
 
             <Link
               href="/terms"
-              className="font-montserrat font-normal text-white text-base tracking-normal leading-normal underline hover:text-white/75 transition-colors"
+              className="font-montserrat font-normal text-white text-sm sm:text-base tracking-normal leading-normal underline hover:text-white/75 transition-colors"
             >
               Terms &amp; Conditions
             </Link>
@@ -117,7 +141,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden hidden sm:block">
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 bg-linear-to-b from-black/25 to-transparent bg-clip-text text-transparent font-montserrat font-medium text-[200px] tracking-tighter leading-none whitespace-nowrap pointer-events-none">
           SheBuildsAI
         </div>

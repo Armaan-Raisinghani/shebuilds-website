@@ -10,7 +10,7 @@ export default function TrailblazersPage() {
   return (
     <>
       {/* Page Header & Category Filter */}
-      <section className="relative w-full px-20 py-12 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
+      <section className="relative w-full px-4 sm:px-8 lg:px-20 py-8 sm:py-12 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:0ms]">
         <div className="max-w-7xl mx-auto">
           <WomenTrailblazerInfoSection
             activeCategory={activeCategory}
@@ -20,7 +20,7 @@ export default function TrailblazersPage() {
       </section>
 
       {/* Profiles Grid */}
-      <section className="relative w-full px-20 py-8 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <section className="relative w-full px-4 sm:px-8 lg:px-20 py-8 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <div className="max-w-7xl mx-auto">
           <ProfilesGridSection activeCategory={activeCategory} />
         </div>

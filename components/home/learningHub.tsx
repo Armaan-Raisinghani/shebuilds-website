@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/ui/button";
 
 export function LearningHubSection() {
@@ -20,21 +21,23 @@ export function LearningHubSection() {
       {/* Text Content */}
       <div className="flex flex-col w-full lg:w-96 items-start gap-6 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:200ms]">
         <div className="flex flex-col items-start gap-4 w-full">
-          <h2 className="font-montserrat font-medium text-gray-900 text-3xl tracking-normal leading-normal">
+          <h2 className="font-montserrat font-medium text-gray-900 text-2xl sm:text-3xl tracking-normal leading-normal">
             Learning Hub
           </h2>
 
-          <p className="font-montserrat font-normal text-gray-500 text-base tracking-normal leading-relaxed">
+          <p className="font-montserrat font-normal text-gray-500 text-sm sm:text-base tracking-normal leading-relaxed">
             Articles, research, podcasts, videos, stories of women leaders, and
             practical tools that deepen understanding of AI and its
             applications.
           </p>
         </div>
 
-        <Button className="h-auto px-4 py-2 bg-teal-700 hover:bg-teal-800 rounded-full transition-colors">
-          <span className="font-montserrat font-medium text-white text-base tracking-normal leading-relaxed whitespace-nowrap">
-            Start learning
-          </span>
+        <Button asChild className="h-auto px-4 py-2 bg-teal-700 hover:bg-teal-800 rounded-full transition-colors">
+          <Link href="/hub">
+            <span className="font-montserrat font-medium text-white text-base tracking-normal leading-relaxed whitespace-nowrap">
+              Start learning
+            </span>
+          </Link>
         </Button>
       </div>
     </section>

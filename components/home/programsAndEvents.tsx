@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/ui/button";
 import homeImagesData from "@/public/data/homeImages.json";
 
@@ -47,18 +48,20 @@ export function ProgramAndEventsSection() {
       {/* Text Content */}
       <div className="flex flex-col w-full lg:w-96 items-start gap-6 -translate-y-4 animate-fade-in opacity-0 [--animation-delay:400ms]">
         <div className="flex flex-col items-start gap-4 w-full">
-          <h2 className="font-montserrat font-medium text-gray-900 text-3xl tracking-normal leading-normal">
+          <h2 className="font-montserrat font-medium text-gray-900 text-2xl sm:text-3xl tracking-normal leading-normal">
             Women Trailblazer
           </h2>
 
-          <p className="font-montserrat font-normal text-gray-500 text-base tracking-normal leading-relaxed">
+          <p className="font-montserrat font-normal text-gray-500 text-sm sm:text-base tracking-normal leading-relaxed">
             Celebrating the scientists, innovators, investors, entrepreneurs,
             and technologists driving India&apos;s AI and tech landscape.
           </p>
         </div>
 
-        <Button className="h-auto px-4 py-2 bg-teal-700 hover:bg-teal-800 rounded-full font-montserrat font-medium text-white text-base tracking-normal leading-relaxed whitespace-nowrap transition-colors">
-          Take a look
+        <Button asChild className="h-auto px-4 py-2 bg-teal-700 hover:bg-teal-800 rounded-full font-montserrat font-medium text-white text-base tracking-normal leading-relaxed whitespace-nowrap transition-colors">
+          <Link href="/trailblazers">
+            Take a look
+          </Link>
         </Button>
       </div>
     </section>

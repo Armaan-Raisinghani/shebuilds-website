@@ -1,9 +1,33 @@
 "use client";
 
 import { Button } from "@/ui/button";
-import categoriesJson from "@/public/data/trailblazerCategories.json";
 
-const categories = categoriesJson.categories;
+const categories = [
+  {
+    id: "scientist",
+    label: "Scientist and Researchers",
+    description:
+      "Founders, researchers, and innovators advancing the frontiers of AI through groundbreaking ideas and transformative technologies. They are shaping new possibilities and driving India's leadership in artificial intelligence.",
+  },
+  {
+    id: "changemakers",
+    label: "Changemakers",
+    description:
+      "Leaders and advocates driving social impact through technology, creating inclusive solutions that empower communities and bridge digital divides across India.",
+  },
+  {
+    id: "catalyst",
+    label: "Catalyst",
+    description:
+      "Investors, mentors, and ecosystem builders who fuel innovation by supporting startups, fostering collaborations, and creating opportunities for emerging talent.",
+  },
+  {
+    id: "architects",
+    label: "Architects",
+    description:
+      "Technical visionaries designing the infrastructure and systems that power AI applications, building scalable solutions for real-world challenges.",
+  },
+];
 
 interface WomenTrailblazerInfoSectionProps {
   activeCategory: string | null;
@@ -33,18 +57,18 @@ export function WomenTrailblazerInfoSection({
         {/* Header */}
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 w-full">
           <div className="flex flex-col max-w-xl items-start gap-4">
-            <h1 className="font-montserrat font-medium text-gray-900 text-4xl md:text-5xl leading-normal tracking-tight">
+            <h1 className="font-montserrat font-medium text-gray-900 text-3xl sm:text-4xl md:text-5xl leading-normal tracking-tight">
               Women Trailblazer
             </h1>
 
-            <p className="font-montserrat font-normal text-gray-500 text-base leading-relaxed">
+            <p className="font-montserrat font-normal text-gray-500 text-sm sm:text-base leading-relaxed">
               Celebrating the scientists, innovators, entrepreneurs, investors,
               policy shapers, and technologists driving India&apos;s AI and deep
               tech landscape.
             </p>
           </div>
 
-          <p className="max-w-lg font-montserrat font-medium text-gray-900 text-base text-left md:text-right leading-relaxed">
+          <p className="max-w-lg font-montserrat font-medium text-gray-900 text-sm sm:text-base text-left md:text-right leading-relaxed">
             Choose a category to filter your options. If you want to see
             everything, simply leave all categories unselected.
           </p>

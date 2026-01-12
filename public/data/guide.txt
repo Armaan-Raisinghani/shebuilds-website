@@ -1,9 +1,11 @@
-navigation.json - Navigation menu items
-footer.json - Footer links, contact info, and partner logos
-upcomingEvents.json - All upcoming event data (9 events)
-pastEvents.json - Past events with image galleries (5 events)
-eventGallery.json - Event gallery carousel data
-profiles.json - Trailblazer profile data (8 profiles)
-trailblazerCategories.json - Category filters for trailblazers
-opportunityFilters.json - Filter options for opportunities
-homeImages.json - Home page image gallery data
+articles.json - Contains all blog/article entries displayed on the Learning Hub page. Each article includes: image URL, author name, publication date, title, and category (AI/Technology/Sustainability/Design/Leadership). Articles are searchable by title, author, or category and support pagination. Currently holds 15 articles.
+
+opportunities.json - Contains all scholarship, fellowship, grant, and program entries displayed on the Opportunity Repository page. Each opportunity includes: type (Fellowship/Grant/Scholarship), name, offered by (organization), award details, and target category (high-school/university/entrepreneurs/professionals). Opportunities are filterable by category and searchable. Currently holds 25 opportunities.
+
+upcomingEvents.json - Contains all upcoming event entries displayed on the Programs & Events page. Each event includes: id, title, date (DD/MM/YY format), category (Hackathon/Ideathon/Speaker Event), image URL, apply link, learn more link, and description. Events are filterable by category and support pagination with "View More" functionality. Currently holds 9 events.
+
+pastEvents.json - Contains historical event records displayed in the Past Events section of the Programs & Events page. Each event includes: title, date (Month Day-Day, Year format), array of image URLs for the gallery carousel, and a detailed description. Events have an image gallery with navigation arrows and pagination dots. Currently holds 5 past events.
+
+profiles.json - Contains all Women Trailblazer profiles displayed on the Trailblazers page. Each profile includes: image URL, name, professional title, category (scientist/changemakers/catalyst/architects), inspirational quote, and description. Profiles are filterable by category and displayed in a responsive grid layout. Currently holds 8 profiles.
+
+homeImages.json - Contains image data for the home page sections including: (1) imageGallery.topImages - array of images for the Programs and Events preview section carousel (src and alt text), (2) programsAndEvents.galleryImages - array of image URLs for the Women Trailblazer preview grid. These images power the dynamic image galleries on the home page.
