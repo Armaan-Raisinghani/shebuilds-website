@@ -52,9 +52,7 @@ export default function HubPage() {
           </h1>
 
           <p className="max-w-2xl font-montserrat font-normal text-gray-500 text-base text-center tracking-normal leading-relaxed mt-4">
-            Open articles, research, podcasts, videos, stories of women leaders,
-            and practical tools that deepen understanding of AI and its
-            applications.
+            The Learning Hub curates open articles, research, podcasts, videos, stories of women leaders, and practical tools that deepen understanding of AI and its applications. It brings together perspectives from experts, creators, and practitioners to support continuous learning.
           </p>
         </div>
       </section>

@@ -12,8 +12,7 @@ export function OpportunityRepositorySection() {
           </h2>
 
           <p className="font-montserrat font-normal text-gray-500 text-sm sm:text-base tracking-normal leading-relaxed">
-            Find scholarships, fellowships, accelerators, grants, courses, and
-            programs for women in AI and tech.
+            The Opportunity Repository is designed as a living growing repository that brings together scholarships, fellowships, accelerators, grants, courses, and programs that open doors for women in AI and deep tech.
           </p>
         </div>
 

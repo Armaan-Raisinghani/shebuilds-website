@@ -9,6 +9,7 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Programs & Events", href: "/programs" },
   { label: "Women Trailblazers", href: "/trailblazers" },
+  { label: "Insights Hub", href: "/insights" },
   { label: "Opportunity Repository", href: "/opportunity" },
   { label: "Learning Hub", href: "/hub" },
 ];

@@ -26,9 +26,7 @@ export function LearningHubSection() {
           </h2>
 
           <p className="font-montserrat font-normal text-gray-500 text-sm sm:text-base tracking-normal leading-relaxed">
-            Articles, research, podcasts, videos, stories of women leaders, and
-            practical tools that deepen understanding of AI and its
-            applications.
+            The Learning Hub curates open articles, research, podcasts, videos, stories of women leaders, and practical tools that deepen understanding of AI and its applications. It brings together perspectives from experts, creators, and practitioners to support continuous learning.
           </p>
         </div>
 

@@ -52,8 +52,7 @@ export function OpportunityRepositorySection() {
           </h2>
 
           <p className="font-montserrat font-normal text-gray-500 text-base tracking-normal leading-relaxed">
-            Celebrating the scientists, innovators, investors, entrepreneurs,
-            and technologists driving India&apos;s AI and tech landscape.
+            Celebrating the scientists, innovators, entrepreneurs, investors, policy shapers, and technologists driving India&apos;s AI and deep tech landscape. This directory highlights their journeys, contributions, and impact — making role models visible so more women can see possibility, aspire higher, and lead boldly.
           </p>
         </div>
 

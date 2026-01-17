@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { Card, CardContent } from "@/ui/card";
 import profilesJson from "@/public/data/profiles.json";
@@ -9,6 +12,20 @@ interface ProfilesGridSectionProps {
 }
 
 export function ProfilesGridSection({ activeCategory }: ProfilesGridSectionProps) {
+  const [expandedProfiles, setExpandedProfiles] = useState<Set<number>>(new Set());
+
+  const toggleExpanded = (index: number) => {
+    setExpandedProfiles((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
+
   const filteredProfiles = activeCategory
     ? profilesData.filter((profile) => profile.category === activeCategory)
     : profilesData;
@@ -43,10 +60,19 @@ export function ProfilesGridSection({ activeCategory }: ProfilesGridSectionProps
                   &quot;{profile.quote}&quot;
                 </blockquote>
                 <p className="font-montserrat font-normal text-xs leading-relaxed">
-                  <span className="text-gray-500">{profile.description}</span>
-                  <button className="text-teal-700 hover:underline transition-all">
-                    Read more
-                  </button>
+                  <span className="text-gray-500">
+                    {expandedProfiles.has(index) 
+                      ? profile.description 
+                      : profile.description.slice(0, 100) + (profile.description.length > 100 ? "..." : "")}
+                  </span>
+                  {profile.description.length > 100 && (
+                    <button 
+                      onClick={() => toggleExpanded(index)}
+                      className="text-teal-700 hover:underline transition-all ml-1"
+                    >
+                      {expandedProfiles.has(index) ? "Show less" : "Read more"}
+                    </button>
+                  )}
                 </p>
               </div>
             </CardContent>

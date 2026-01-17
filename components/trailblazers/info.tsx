@@ -5,27 +5,27 @@ import { Button } from "@/ui/button";
 const categories = [
   {
     id: "scientist",
-    label: "Scientist and Researchers",
+    label: "Scientists & Researchers",
     description:
       "Founders, researchers, and innovators advancing the frontiers of AI through groundbreaking ideas and transformative technologies. They are shaping new possibilities and driving India's leadership in artificial intelligence.",
   },
   {
-    id: "changemakers",
-    label: "Changemakers",
-    description:
-      "Leaders and advocates driving social impact through technology, creating inclusive solutions that empower communities and bridge digital divides across India.",
-  },
-  {
     id: "catalyst",
-    label: "Catalyst",
+    label: "Catalysts",
     description:
-      "Investors, mentors, and ecosystem builders who fuel innovation by supporting startups, fostering collaborations, and creating opportunities for emerging talent.",
+      "Investors, industry champions, and corporate leaders enabling growth and scale. They fuel innovation by providing capital, mentorship, and strategic partnerships that accelerate AI adoption and impact.",
   },
   {
     id: "architects",
     label: "Architects",
     description:
-      "Technical visionaries designing the infrastructure and systems that power AI applications, building scalable solutions for real-world challenges.",
+      "Policymakers and strategists designing India's AI and data frameworks. They create the governance, ethics, and infrastructure that ensure responsible, inclusive, and future-ready AI ecosystems.",
+  },
+  {
+    id: "changemakers",
+    label: "Changemakers",
+    description:
+      "Social innovators and technologists applying AI for societal and environmental good. They harness technology to solve real-world challenges, promote equity, and drive sustainable development.",
   },
 ];
 
@@ -49,7 +49,7 @@ export function WomenTrailblazerInfoSection({
 
   const activeDesc =
     categories.find((c) => c.id === activeCategory)?.description ||
-    "Celebrating the scientists, innovators, entrepreneurs, investors, policy shapers, and technologists driving India's AI and deep tech landscape.";
+    "Celebrating the scientists, innovators, entrepreneurs, investors, policy shapers, and technologists driving India's AI and deep tech landscape. This directory highlights their journeys, contributions, and impact — making role models visible so more women can see possibility, aspire higher, and lead boldly.";
 
   return (
     <div className="flex flex-col w-full items-start gap-7">
@@ -62,9 +62,7 @@ export function WomenTrailblazerInfoSection({
             </h1>
 
             <p className="font-montserrat font-normal text-gray-500 text-sm sm:text-base leading-relaxed">
-              Celebrating the scientists, innovators, entrepreneurs, investors,
-              policy shapers, and technologists driving India&apos;s AI and deep
-              tech landscape.
+              Celebrating the scientists, innovators, entrepreneurs, investors, policy shapers, and technologists driving India&apos;s AI and deep tech landscape. This directory highlights their journeys, contributions, and impact — making role models visible so more women can see possibility, aspire higher, and lead boldly.
             </p>
           </div>
 

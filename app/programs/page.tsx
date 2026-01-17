@@ -21,8 +21,7 @@ export default function ProgramsPage() {
             Programs & Events
           </h1>
           <p className="max-w-2xl font-montserrat font-normal text-gray-500 text-base text-center tracking-normal leading-relaxed mt-4">
-            Discover initiatives you can join, apply to, or engage with as part
-            of the broader ecosystem.
+            Stay connected with upcoming programs, workshops, and events in AI at Plaksha and across India. Discover initiatives you can join, apply to, or engage with as part of the broader ecosystem.
           </p>
         </div>
       </section>

@@ -64,9 +64,7 @@ export default function OpportunityPage() {
           </h1>
 
           <p className="max-w-2xl font-montserrat font-normal text-gray-500 text-base text-center tracking-normal leading-relaxed mt-4">
-            A repository that brings together scholarships, fellowships,
-            accelerators, grants, courses, and programs that open doors for
-            women in AI and deep tech.
+            The Opportunity Repository is designed as a living growing repository that brings together scholarships, fellowships, accelerators, grants, courses, and programs that open doors for women in AI and deep tech.
           </p>
         </div>
       </section>

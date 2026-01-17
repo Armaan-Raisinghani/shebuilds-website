@@ -5,6 +5,7 @@ const siteMapLinks = [
   { label: "Home", href: "/" },
   { label: "Program & Events", href: "/programs" },
   { label: "Women Trailblazers", href: "/trailblazers" },
+  { label: "Insights Hub", href: "/insights" },
   { label: "Learning Hub", href: "/hub" },
   { label: "Opportunity Repository", href: "/opportunity" },
 ];
@@ -23,10 +24,16 @@ const partnerLogos = [
     height: 64,
   },
   {
-    src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/image-8.png",
-    alt: "AI for India logo",
+    src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/mphasis-foundation-1.png",
+    alt: "Mphasis Foundation logo",
     width: 147,
     height: 48,
+  },
+  {
+    src: "https://c.animaapp.com/mjvqb3fs5p8iw8/img/image-10.png",
+    alt: "Udaiti Foundation logo",
+    width: 74,
+    height: 31,
   },
 ];
 
@@ -43,13 +50,15 @@ export function Footer() {
               </h2>
 
               <p className="font-montserrat font-normal text-white/75 text-xs tracking-normal leading-5">
-                An ecosystem for women in AI and deep tech spotlighting leaders
-                and innovators, surfaces insights and trends, and expands access
-                to opportunities, scholarships, and resources
+                An initiative of the DS Brar Centre for Girls & Women in STEM at Plaksha
+                University, supported by Mphasis F1 Foundation. Building an ecosystem for women in AI and deep tech.
               </p>
             </div>
 
             <div className="flex flex-col gap-4">
+              <p className="font-montserrat font-normal text-white/75 text-xs tracking-normal leading-5">
+                Partners
+              </p>
               <div className="flex items-center gap-4 flex-wrap">
                 {partnerLogos.map((logo, index) => (
                   <Image
@@ -61,19 +70,6 @@ export function Footer() {
                     src={logo.src}
                   />
                 ))}
-              </div>
-
-              <div className="flex flex-col items-start">
-                <p className="font-montserrat font-normal text-white/75 text-xs tracking-normal leading-5">
-                  Partners
-                </p>
-                <Image
-                  className="w-18 h-8"
-                  width={74}
-                  height={31}
-                  alt="Partner logo"
-                  src="https://c.animaapp.com/mjvqb3fs5p8iw8/img/image-10.png"
-                />
               </div>
             </div>
           </div>

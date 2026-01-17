@@ -20,6 +20,7 @@ interface GrantItem {
   offeredBy: string;
   award: string;
   category: string;
+  url?: string;
 }
 
 interface GrantsAndFellowshipsListSectionProps {
@@ -139,6 +140,7 @@ export function GrantsAndFellowshipsListSection({
                     size="icon"
                     className="h-7 w-7 p-0 hover:bg-gray-100"
                     aria-label={`Learn more about ${grant.name}`}
+                    onClick={() => grant.url && window.open(grant.url, '_blank')}
                   >
                     <ExternalLinkIcon className="w-5 h-5 text-gray-700" />
                   </Button>
